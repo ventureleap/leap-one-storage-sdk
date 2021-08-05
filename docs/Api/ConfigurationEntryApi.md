@@ -21,11 +21,16 @@ Removes the ConfigurationEntry resource.
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+// Configure API key authorization: apiKey
+$config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $apiInstance = new VentureLeap\StorageService\Api\ConfigurationEntryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $uuid = "uuid_example"; // string | Resource identifier
 
@@ -49,7 +54,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[apiKey](../../README.md#apiKey)
 
 ### HTTP request headers
 
@@ -59,7 +64,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getConfigurationEntryCollection**
-> \VentureLeap\StorageService\Model\InlineResponse200 getConfigurationEntryCollection($page, $pagination, $key, $sub_key, $value, $application_id)
+> \VentureLeap\StorageService\Model\InlineResponse200 getConfigurationEntryCollection($page, $items_per_page, $pagination, $key, $sub_key, $value, $application_id)
 
 Retrieves the collection of ConfigurationEntry resources.
 
@@ -69,13 +74,19 @@ Retrieves the collection of ConfigurationEntry resources.
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+// Configure API key authorization: apiKey
+$config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $apiInstance = new VentureLeap\StorageService\Api\ConfigurationEntryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $page = 1; // int | The collection page number
+$items_per_page = 30; // int | The number of items per page
 $pagination = true; // bool | Enable or disable pagination
 $key = "key_example"; // string | 
 $sub_key = "sub_key_example"; // string | 
@@ -83,7 +94,7 @@ $value = "value_example"; // string |
 $application_id = "application_id_example"; // string | 
 
 try {
-    $result = $apiInstance->getConfigurationEntryCollection($page, $pagination, $key, $sub_key, $value, $application_id);
+    $result = $apiInstance->getConfigurationEntryCollection($page, $items_per_page, $pagination, $key, $sub_key, $value, $application_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ConfigurationEntryApi->getConfigurationEntryCollection: ', $e->getMessage(), PHP_EOL;
@@ -96,6 +107,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| The collection page number | [optional] [default to 1]
+ **items_per_page** | **int**| The number of items per page | [optional] [default to 30]
  **pagination** | **bool**| Enable or disable pagination | [optional]
  **key** | **string**|  | [optional]
  **sub_key** | **string**|  | [optional]
@@ -108,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[apiKey](../../README.md#apiKey)
 
 ### HTTP request headers
 
@@ -128,11 +140,16 @@ Retrieves a ConfigurationEntry resource.
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+// Configure API key authorization: apiKey
+$config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $apiInstance = new VentureLeap\StorageService\Api\ConfigurationEntryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $uuid = "uuid_example"; // string | Resource identifier
 
@@ -157,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[apiKey](../../README.md#apiKey)
 
 ### HTTP request headers
 
@@ -177,11 +194,16 @@ Creates a ConfigurationEntry resource.
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+// Configure API key authorization: apiKey
+$config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $apiInstance = new VentureLeap\StorageService\Api\ConfigurationEntryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $body = new \VentureLeap\StorageService\Model\ConfigurationEntryJsonldConfigurationWrite(); // \VentureLeap\StorageService\Model\ConfigurationEntryJsonldConfigurationWrite | The new ConfigurationEntry resource
 
@@ -206,7 +228,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[apiKey](../../README.md#apiKey)
 
 ### HTTP request headers
 
@@ -226,11 +248,16 @@ Creates a ConfigurationEntry resource.
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+// Configure API key authorization: apiKey
+$config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $apiInstance = new VentureLeap\StorageService\Api\ConfigurationEntryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $body = new \VentureLeap\StorageService\Model\ConfigurationEntryJsonldConfigurationWrite(); // \VentureLeap\StorageService\Model\ConfigurationEntryJsonldConfigurationWrite | The new ConfigurationEntry resource
 
@@ -255,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[apiKey](../../README.md#apiKey)
 
 ### HTTP request headers
 
@@ -275,11 +302,16 @@ Replaces the ConfigurationEntry resource.
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+// Configure API key authorization: apiKey
+$config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $apiInstance = new VentureLeap\StorageService\Api\ConfigurationEntryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $body = new \VentureLeap\StorageService\Model\ConfigurationEntryJsonldConfigurationWrite(); // \VentureLeap\StorageService\Model\ConfigurationEntryJsonldConfigurationWrite | The updated ConfigurationEntry resource
 $uuid = "uuid_example"; // string | Resource identifier
@@ -306,7 +338,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[apiKey](../../README.md#apiKey)
 
 ### HTTP request headers
 
@@ -326,11 +358,16 @@ Replaces the ConfigurationEntry resource.
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+// Configure API key authorization: apiKey
+$config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $apiInstance = new VentureLeap\StorageService\Api\ConfigurationEntryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $body = new \VentureLeap\StorageService\Model\ConfigurationEntryJsonldConfigurationWrite(); // \VentureLeap\StorageService\Model\ConfigurationEntryJsonldConfigurationWrite | The updated ConfigurationEntry resource
 $uuid = "uuid_example"; // string | Resource identifier
@@ -357,7 +394,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[apiKey](../../README.md#apiKey)
 
 ### HTTP request headers
 
