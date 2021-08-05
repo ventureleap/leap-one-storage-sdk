@@ -1,6 +1,6 @@
 <?php
 /**
- * InlineResponse200HydrasearchHydramappingTest
+ * FileUploadJsonldFileReadTest
  *
  * PHP version 5
  *
@@ -29,15 +29,15 @@
 namespace VentureLeap\StorageService;
 
 /**
- * InlineResponse200HydrasearchHydramappingTest Class Doc Comment
+ * FileUploadJsonldFileReadTest Class Doc Comment
  *
  * @category    Class
- * @description InlineResponse200HydrasearchHydramapping
+ * @description FileUploadJsonldFileRead
  * @package     VentureLeap\StorageService
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class InlineResponse200HydrasearchHydramappingTest extends \PHPUnit_Framework_TestCase
+class FileUploadJsonldFileReadTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -69,9 +69,23 @@ class InlineResponse200HydrasearchHydramappingTest extends \PHPUnit_Framework_Te
     }
 
     /**
-     * Test "InlineResponse200HydrasearchHydramapping"
+     * Test "FileUploadJsonldFileRead"
      */
-    public function testInlineResponse200HydrasearchHydramapping()
+    public function testFileUploadJsonldFileRead()
+    {
+    }
+
+    /**
+     * Test attribute "context"
+     */
+    public function testPropertyContext()
+    {
+    }
+
+    /**
+     * Test attribute "id"
+     */
+    public function testPropertyId()
     {
     }
 
@@ -83,23 +97,9 @@ class InlineResponse200HydrasearchHydramappingTest extends \PHPUnit_Framework_Te
     }
 
     /**
-     * Test attribute "variable"
+     * Test attribute "file_name"
      */
-    public function testPropertyVariable()
-    {
-    }
-
-    /**
-     * Test attribute "property"
-     */
-    public function testPropertyProperty()
-    {
-    }
-
-    /**
-     * Test attribute "required"
-     */
-    public function testPropertyRequired()
+    public function testPropertyFileName()
     {
     }
 }

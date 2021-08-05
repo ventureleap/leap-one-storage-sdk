@@ -1,6 +1,6 @@
 <?php
 /**
- * InlineResponse200HydrasearchHydramapping
+ * FileUploadFileRead
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ use \ArrayAccess;
 use \VentureLeap\StorageService\ObjectSerializer;
 
 /**
- * InlineResponse200HydrasearchHydramapping Class Doc Comment
+ * FileUploadFileRead Class Doc Comment
  *
  * @category Class
  * @package  VentureLeap\StorageService
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class InlineResponse200HydrasearchHydramapping implements ModelInterface, ArrayAccess
+class FileUploadFileRead implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,7 +48,7 @@ class InlineResponse200HydrasearchHydramapping implements ModelInterface, ArrayA
       *
       * @var string
       */
-    protected static $swaggerModelName = 'inline_response_200_hydrasearch_hydramapping';
+    protected static $swaggerModelName = 'FileUpload-file.read';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -56,10 +56,7 @@ class InlineResponse200HydrasearchHydramapping implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'type' => 'string',
-'variable' => 'string',
-'property' => 'string',
-'required' => 'bool'    ];
+        'file_name' => 'string'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -67,10 +64,7 @@ class InlineResponse200HydrasearchHydramapping implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'type' => null,
-'variable' => null,
-'property' => null,
-'required' => null    ];
+        'file_name' => null    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -99,10 +93,7 @@ class InlineResponse200HydrasearchHydramapping implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $attributeMap = [
-        'type' => '@type',
-'variable' => 'variable',
-'property' => 'property',
-'required' => 'required'    ];
+        'file_name' => 'fileName'    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -110,10 +101,7 @@ class InlineResponse200HydrasearchHydramapping implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-'variable' => 'setVariable',
-'property' => 'setProperty',
-'required' => 'setRequired'    ];
+        'file_name' => 'setFileName'    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -121,10 +109,7 @@ class InlineResponse200HydrasearchHydramapping implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-'variable' => 'getVariable',
-'property' => 'getProperty',
-'required' => 'getRequired'    ];
+        'file_name' => 'getFileName'    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -184,10 +169,7 @@ class InlineResponse200HydrasearchHydramapping implements ModelInterface, ArrayA
      */
     public function __construct(array $data = null)
     {
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['variable'] = isset($data['variable']) ? $data['variable'] : null;
-        $this->container['property'] = isset($data['property']) ? $data['property'] : null;
-        $this->container['required'] = isset($data['required']) ? $data['required'] : null;
+        $this->container['file_name'] = isset($data['file_name']) ? $data['file_name'] : null;
     }
 
     /**
@@ -215,97 +197,25 @@ class InlineResponse200HydrasearchHydramapping implements ModelInterface, ArrayA
 
 
     /**
-     * Gets type
+     * Gets file_name
      *
      * @return string
      */
-    public function getType()
+    public function getFileName()
     {
-        return $this->container['type'];
+        return $this->container['file_name'];
     }
 
     /**
-     * Sets type
+     * Sets file_name
      *
-     * @param string $type type
+     * @param string $file_name file_name
      *
      * @return $this
      */
-    public function setType($type)
+    public function setFileName($file_name)
     {
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets variable
-     *
-     * @return string
-     */
-    public function getVariable()
-    {
-        return $this->container['variable'];
-    }
-
-    /**
-     * Sets variable
-     *
-     * @param string $variable variable
-     *
-     * @return $this
-     */
-    public function setVariable($variable)
-    {
-        $this->container['variable'] = $variable;
-
-        return $this;
-    }
-
-    /**
-     * Gets property
-     *
-     * @return string
-     */
-    public function getProperty()
-    {
-        return $this->container['property'];
-    }
-
-    /**
-     * Sets property
-     *
-     * @param string $property property
-     *
-     * @return $this
-     */
-    public function setProperty($property)
-    {
-        $this->container['property'] = $property;
-
-        return $this;
-    }
-
-    /**
-     * Gets required
-     *
-     * @return bool
-     */
-    public function getRequired()
-    {
-        return $this->container['required'];
-    }
-
-    /**
-     * Sets required
-     *
-     * @param bool $required required
-     *
-     * @return $this
-     */
-    public function setRequired($required)
-    {
-        $this->container['required'] = $required;
+        $this->container['file_name'] = $file_name;
 
         return $this;
     }
