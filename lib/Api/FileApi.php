@@ -660,7 +660,7 @@ class FileApi
      *
      * Updates the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileFileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\File $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
@@ -678,7 +678,7 @@ class FileApi
      *
      * Updates the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileFileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\File $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
@@ -754,7 +754,7 @@ class FileApi
      *
      * Updates the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileFileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\File $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException
@@ -775,7 +775,7 @@ class FileApi
      *
      * Updates the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileFileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\File $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException
@@ -826,7 +826,7 @@ class FileApi
     /**
      * Create request for operation 'patchFileItem'
      *
-     * @param  \VentureLeap\StorageService\Model\FileFileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\File $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException
@@ -1208,7 +1208,7 @@ class FileApi
      *
      * Replaces the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileJsonldFileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileJsonld $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
@@ -1226,7 +1226,7 @@ class FileApi
      *
      * Replaces the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileJsonldFileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileJsonld $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
@@ -1302,7 +1302,7 @@ class FileApi
      *
      * Replaces the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileJsonldFileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileJsonld $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException
@@ -1323,7 +1323,7 @@ class FileApi
      *
      * Replaces the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileJsonldFileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileJsonld $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException
@@ -1374,7 +1374,7 @@ class FileApi
     /**
      * Create request for operation 'putFileItem'
      *
-     * @param  \VentureLeap\StorageService\Model\FileJsonldFileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileJsonld $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException

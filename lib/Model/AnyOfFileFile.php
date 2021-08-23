@@ -1,6 +1,6 @@
 <?php
 /**
- * FileJsonldFileWrite
+ * AnyOfFileFile
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ use \ArrayAccess;
 use \VentureLeap\StorageService\ObjectSerializer;
 
 /**
- * FileJsonldFileWrite Class Doc Comment
+ * AnyOfFileFile Class Doc Comment
  *
  * @category Class
  * @package  VentureLeap\StorageService
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FileJsonldFileWrite implements ModelInterface, ArrayAccess
+class AnyOfFileFile implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,7 +48,7 @@ class FileJsonldFileWrite implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'File.jsonld-FileWrite';
+    protected static $swaggerModelName = 'AnyOfFileFile';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -56,10 +56,7 @@ class FileJsonldFileWrite implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'context' => 'OneOfFileJsonldFileWriteContext',
-'id' => 'string',
-'type' => 'string',
-'application_id' => 'string'    ];
+            ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -67,10 +64,7 @@ class FileJsonldFileWrite implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'context' => null,
-'id' => null,
-'type' => null,
-'application_id' => null    ];
+            ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -99,10 +93,7 @@ class FileJsonldFileWrite implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'context' => '@context',
-'id' => '@id',
-'type' => '@type',
-'application_id' => 'applicationId'    ];
+            ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -110,10 +101,7 @@ class FileJsonldFileWrite implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'context' => 'setContext',
-'id' => 'setId',
-'type' => 'setType',
-'application_id' => 'setApplicationId'    ];
+            ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -121,10 +109,7 @@ class FileJsonldFileWrite implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'context' => 'getContext',
-'id' => 'getId',
-'type' => 'getType',
-'application_id' => 'getApplicationId'    ];
+            ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -184,10 +169,6 @@ class FileJsonldFileWrite implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['context'] = isset($data['context']) ? $data['context'] : null;
-        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['application_id'] = isset($data['application_id']) ? $data['application_id'] : null;
     }
 
     /**
@@ -213,102 +194,6 @@ class FileJsonldFileWrite implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets context
-     *
-     * @return OneOfFileJsonldFileWriteContext
-     */
-    public function getContext()
-    {
-        return $this->container['context'];
-    }
-
-    /**
-     * Sets context
-     *
-     * @param OneOfFileJsonldFileWriteContext $context context
-     *
-     * @return $this
-     */
-    public function setContext($context)
-    {
-        $this->container['context'] = $context;
-
-        return $this;
-    }
-
-    /**
-     * Gets id
-     *
-     * @return string
-     */
-    public function getId()
-    {
-        return $this->container['id'];
-    }
-
-    /**
-     * Sets id
-     *
-     * @param string $id id
-     *
-     * @return $this
-     */
-    public function setId($id)
-    {
-        $this->container['id'] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Gets type
-     *
-     * @return string
-     */
-    public function getType()
-    {
-        return $this->container['type'];
-    }
-
-    /**
-     * Sets type
-     *
-     * @param string $type type
-     *
-     * @return $this
-     */
-    public function setType($type)
-    {
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets application_id
-     *
-     * @return string
-     */
-    public function getApplicationId()
-    {
-        return $this->container['application_id'];
-    }
-
-    /**
-     * Sets application_id
-     *
-     * @param string $application_id application_id
-     *
-     * @return $this
-     */
-    public function setApplicationId($application_id)
-    {
-        $this->container['application_id'] = $application_id;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      *

@@ -1,6 +1,6 @@
 <?php
 /**
- * OneOfFileJsonldFileWriteContext
+ * AnyOfFileJsonldFile
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ use \ArrayAccess;
 use \VentureLeap\StorageService\ObjectSerializer;
 
 /**
- * OneOfFileJsonldFileWriteContext Class Doc Comment
+ * AnyOfFileJsonldFile Class Doc Comment
  *
  * @category Class
  * @package  VentureLeap\StorageService
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OneOfFileJsonldFileWriteContext implements ModelInterface, ArrayAccess
+class AnyOfFileJsonldFile implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,7 +48,7 @@ class OneOfFileJsonldFileWriteContext implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OneOfFile.jsonld-FileWriteContext';
+    protected static $swaggerModelName = 'AnyOfFile.jsonldFile';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

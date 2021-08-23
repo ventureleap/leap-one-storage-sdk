@@ -1,6 +1,6 @@
 <?php
 /**
- * FileFileWrite
+ * OneOfFileJsonldContext
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ use \ArrayAccess;
 use \VentureLeap\StorageService\ObjectSerializer;
 
 /**
- * FileFileWrite Class Doc Comment
+ * OneOfFileJsonldContext Class Doc Comment
  *
  * @category Class
  * @package  VentureLeap\StorageService
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FileFileWrite implements ModelInterface, ArrayAccess
+class OneOfFileJsonldContext implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,7 +48,7 @@ class FileFileWrite implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'File-FileWrite';
+    protected static $swaggerModelName = 'OneOfFile.jsonldContext';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -56,7 +56,7 @@ class FileFileWrite implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'application_id' => 'string'    ];
+            ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -64,7 +64,7 @@ class FileFileWrite implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'application_id' => null    ];
+            ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -93,7 +93,7 @@ class FileFileWrite implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'application_id' => 'applicationId'    ];
+            ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -101,7 +101,7 @@ class FileFileWrite implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'application_id' => 'setApplicationId'    ];
+            ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -109,7 +109,7 @@ class FileFileWrite implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'application_id' => 'getApplicationId'    ];
+            ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -169,7 +169,6 @@ class FileFileWrite implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['application_id'] = isset($data['application_id']) ? $data['application_id'] : null;
     }
 
     /**
@@ -195,30 +194,6 @@ class FileFileWrite implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets application_id
-     *
-     * @return string
-     */
-    public function getApplicationId()
-    {
-        return $this->container['application_id'];
-    }
-
-    /**
-     * Sets application_id
-     *
-     * @param string $application_id application_id
-     *
-     * @return $this
-     */
-    public function setApplicationId($application_id)
-    {
-        $this->container['application_id'] = $application_id;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      *

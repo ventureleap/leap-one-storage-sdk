@@ -150,7 +150,7 @@ $apiInstance = new VentureLeap\StorageService\Api\FileApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \VentureLeap\StorageService\Model\FileFileWrite(); // \VentureLeap\StorageService\Model\FileFileWrite | The updated File resource
+$body = new \VentureLeap\StorageService\Model\File(); // \VentureLeap\StorageService\Model\File | The updated File resource
 $uuid = "uuid_example"; // string | Resource identifier
 
 try {
@@ -166,7 +166,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\VentureLeap\StorageService\Model\FileFileWrite**](../Model/FileFileWrite.md)| The updated File resource |
+ **body** | [**\VentureLeap\StorageService\Model\File**](../Model/File.md)| The updated File resource |
  **uuid** | **string**| Resource identifier |
 
 ### Return type
@@ -262,7 +262,7 @@ $apiInstance = new VentureLeap\StorageService\Api\FileApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \VentureLeap\StorageService\Model\FileJsonldFileWrite(); // \VentureLeap\StorageService\Model\FileJsonldFileWrite | The updated File resource
+$body = new \VentureLeap\StorageService\Model\FileJsonld(); // \VentureLeap\StorageService\Model\FileJsonld | The updated File resource
 $uuid = "uuid_example"; // string | Resource identifier
 
 try {
@@ -278,7 +278,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\VentureLeap\StorageService\Model\FileJsonldFileWrite**](../Model/FileJsonldFileWrite.md)| The updated File resource |
+ **body** | [**\VentureLeap\StorageService\Model\FileJsonld**](../Model/FileJsonld.md)| The updated File resource |
  **uuid** | **string**| Resource identifier |
 
 ### Return type

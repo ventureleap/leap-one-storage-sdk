@@ -183,12 +183,14 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [AnyOfFileFile](docs/Model/AnyOfFileFile.md)
+ - [AnyOfFileJsonldFile](docs/Model/AnyOfFileJsonldFile.md)
  - [Body](docs/Model/Body.md)
  - [ConfigurationEntryJsonldConfigurationRead](docs/Model/ConfigurationEntryJsonldConfigurationRead.md)
  - [ConfigurationEntryJsonldConfigurationWrite](docs/Model/ConfigurationEntryJsonldConfigurationWrite.md)
- - [FileFileWrite](docs/Model/FileFileWrite.md)
+ - [File](docs/Model/File.md)
+ - [FileJsonld](docs/Model/FileJsonld.md)
  - [FileJsonldFileRead](docs/Model/FileJsonldFileRead.md)
- - [FileJsonldFileWrite](docs/Model/FileJsonldFileWrite.md)
  - [InlineResponse200](docs/Model/InlineResponse200.md)
  - [InlineResponse2001](docs/Model/InlineResponse2001.md)
  - [InlineResponse200Hydrasearch](docs/Model/InlineResponse200Hydrasearch.md)
@@ -196,8 +198,8 @@ Class | Method | HTTP request | Description
  - [InlineResponse200Hydraview](docs/Model/InlineResponse200Hydraview.md)
  - [OneOfConfigurationEntryJsonldConfigurationReadContext](docs/Model/OneOfConfigurationEntryJsonldConfigurationReadContext.md)
  - [OneOfConfigurationEntryJsonldConfigurationWriteContext](docs/Model/OneOfConfigurationEntryJsonldConfigurationWriteContext.md)
+ - [OneOfFileJsonldContext](docs/Model/OneOfFileJsonldContext.md)
  - [OneOfFileJsonldFileReadContext](docs/Model/OneOfFileJsonldFileReadContext.md)
- - [OneOfFileJsonldFileWriteContext](docs/Model/OneOfFileJsonldFileWriteContext.md)
 
 ## Documentation For Authorization
 
