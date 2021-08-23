@@ -6,7 +6,6 @@ Name | Type | Description | Notes
 **context** | [**OneOfFileJsonldContext**](OneOfFileJsonldContext.md) |  | [optional] 
 **id** | **string** |  | [optional] 
 **type** | **string** |  | [optional] 
-**file** | [**AnyOfFileJsonldFile**](AnyOfFileJsonldFile.md) |  | [optional] 
 **uuid** | **string** |  | [optional] 
 **file_name** | **string** |  | [optional] 
 **original_file_name** | **string** |  | [optional] 

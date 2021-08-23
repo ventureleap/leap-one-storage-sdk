@@ -76,13 +76,6 @@ class FileJsonldFileReadTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "context"
-     */
-    public function testPropertyContext()
-    {
-    }
-
-    /**
      * Test attribute "id"
      */
     public function testPropertyId()
@@ -93,6 +86,13 @@ class FileJsonldFileReadTest extends \PHPUnit_Framework_TestCase
      * Test attribute "type"
      */
     public function testPropertyType()
+    {
+    }
+
+    /**
+     * Test attribute "context"
+     */
+    public function testPropertyContext()
     {
     }
 
@@ -149,6 +149,13 @@ class FileJsonldFileReadTest extends \PHPUnit_Framework_TestCase
      * Test attribute "encrypted"
      */
     public function testPropertyEncrypted()
+    {
+    }
+
+    /**
+     * Test attribute "application_id"
+     */
+    public function testPropertyApplicationId()
     {
     }
 }

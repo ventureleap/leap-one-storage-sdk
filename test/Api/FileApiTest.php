@@ -101,16 +101,6 @@ class FileApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for postFileCollection
-     *
-     * Creates a File resource..
-     *
-     */
-    public function testPostFileCollection()
-    {
-    }
-
-    /**
      * Test case for putFileItem
      *
      * Replaces the File resource..

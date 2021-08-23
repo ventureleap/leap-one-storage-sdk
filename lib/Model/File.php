@@ -56,8 +56,7 @@ class File implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'file' => 'AnyOfFileFile',
-'uuid' => 'string',
+        'uuid' => 'string',
 'file_name' => 'string',
 'original_file_name' => 'string',
 'mime_type' => 'string',
@@ -75,8 +74,7 @@ class File implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'file' => null,
-'uuid' => 'uuid',
+        'uuid' => 'uuid',
 'file_name' => null,
 'original_file_name' => null,
 'mime_type' => null,
@@ -115,8 +113,7 @@ class File implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'file' => 'file',
-'uuid' => 'uuid',
+        'uuid' => 'uuid',
 'file_name' => 'fileName',
 'original_file_name' => 'originalFileName',
 'mime_type' => 'mimeType',
@@ -134,8 +131,7 @@ class File implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'file' => 'setFile',
-'uuid' => 'setUuid',
+        'uuid' => 'setUuid',
 'file_name' => 'setFileName',
 'original_file_name' => 'setOriginalFileName',
 'mime_type' => 'setMimeType',
@@ -153,8 +149,7 @@ class File implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'file' => 'getFile',
-'uuid' => 'getUuid',
+        'uuid' => 'getUuid',
 'file_name' => 'getFileName',
 'original_file_name' => 'getOriginalFileName',
 'mime_type' => 'getMimeType',
@@ -224,7 +219,6 @@ class File implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['file'] = isset($data['file']) ? $data['file'] : null;
         $this->container['uuid'] = isset($data['uuid']) ? $data['uuid'] : null;
         $this->container['file_name'] = isset($data['file_name']) ? $data['file_name'] : null;
         $this->container['original_file_name'] = isset($data['original_file_name']) ? $data['original_file_name'] : null;
@@ -261,30 +255,6 @@ class File implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets file
-     *
-     * @return AnyOfFileFile
-     */
-    public function getFile()
-    {
-        return $this->container['file'];
-    }
-
-    /**
-     * Sets file
-     *
-     * @param AnyOfFileFile $file file
-     *
-     * @return $this
-     */
-    public function setFile($file)
-    {
-        $this->container['file'] = $file;
-
-        return $this;
-    }
 
     /**
      * Gets uuid

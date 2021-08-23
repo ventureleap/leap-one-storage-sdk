@@ -59,7 +59,6 @@ class FileJsonld implements ModelInterface, ArrayAccess
         'context' => 'OneOfFileJsonldContext',
 'id' => 'string',
 'type' => 'string',
-'file' => 'AnyOfFileJsonldFile',
 'uuid' => 'string',
 'file_name' => 'string',
 'original_file_name' => 'string',
@@ -81,7 +80,6 @@ class FileJsonld implements ModelInterface, ArrayAccess
         'context' => null,
 'id' => null,
 'type' => null,
-'file' => null,
 'uuid' => 'uuid',
 'file_name' => null,
 'original_file_name' => null,
@@ -124,7 +122,6 @@ class FileJsonld implements ModelInterface, ArrayAccess
         'context' => '@context',
 'id' => '@id',
 'type' => '@type',
-'file' => 'file',
 'uuid' => 'uuid',
 'file_name' => 'fileName',
 'original_file_name' => 'originalFileName',
@@ -146,7 +143,6 @@ class FileJsonld implements ModelInterface, ArrayAccess
         'context' => 'setContext',
 'id' => 'setId',
 'type' => 'setType',
-'file' => 'setFile',
 'uuid' => 'setUuid',
 'file_name' => 'setFileName',
 'original_file_name' => 'setOriginalFileName',
@@ -168,7 +164,6 @@ class FileJsonld implements ModelInterface, ArrayAccess
         'context' => 'getContext',
 'id' => 'getId',
 'type' => 'getType',
-'file' => 'getFile',
 'uuid' => 'getUuid',
 'file_name' => 'getFileName',
 'original_file_name' => 'getOriginalFileName',
@@ -242,7 +237,6 @@ class FileJsonld implements ModelInterface, ArrayAccess
         $this->container['context'] = isset($data['context']) ? $data['context'] : null;
         $this->container['id'] = isset($data['id']) ? $data['id'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['file'] = isset($data['file']) ? $data['file'] : null;
         $this->container['uuid'] = isset($data['uuid']) ? $data['uuid'] : null;
         $this->container['file_name'] = isset($data['file_name']) ? $data['file_name'] : null;
         $this->container['original_file_name'] = isset($data['original_file_name']) ? $data['original_file_name'] : null;
@@ -348,30 +342,6 @@ class FileJsonld implements ModelInterface, ArrayAccess
     public function setType($type)
     {
         $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets file
-     *
-     * @return AnyOfFileJsonldFile
-     */
-    public function getFile()
-    {
-        return $this->container['file'];
-    }
-
-    /**
-     * Sets file
-     *
-     * @param AnyOfFileJsonldFile $file file
-     *
-     * @return $this
-     */
-    public function setFile($file)
-    {
-        $this->container['file'] = $file;
 
         return $this;
     }

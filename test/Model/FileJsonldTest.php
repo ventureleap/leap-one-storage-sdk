@@ -97,13 +97,6 @@ class FileJsonldTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "file"
-     */
-    public function testPropertyFile()
-    {
-    }
-
-    /**
      * Test attribute "uuid"
      */
     public function testPropertyUuid()

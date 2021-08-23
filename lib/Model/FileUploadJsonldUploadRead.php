@@ -1,6 +1,6 @@
 <?php
 /**
- * AnyOfFileJsonldFile
+ * FileUploadJsonldUploadRead
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ use \ArrayAccess;
 use \VentureLeap\StorageService\ObjectSerializer;
 
 /**
- * AnyOfFileJsonldFile Class Doc Comment
+ * FileUploadJsonldUploadRead Class Doc Comment
  *
  * @category Class
  * @package  VentureLeap\StorageService
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AnyOfFileJsonldFile implements ModelInterface, ArrayAccess
+class FileUploadJsonldUploadRead implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,7 +48,7 @@ class AnyOfFileJsonldFile implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AnyOfFile.jsonldFile';
+    protected static $swaggerModelName = 'FileUpload.jsonld-upload.read';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -56,7 +56,10 @@ class AnyOfFileJsonldFile implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-            ];
+        'context' => 'OneOfFileUploadJsonldUploadReadContext',
+'id' => 'string',
+'type' => 'string',
+'file_name' => 'string'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -64,7 +67,10 @@ class AnyOfFileJsonldFile implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-            ];
+        'context' => null,
+'id' => null,
+'type' => null,
+'file_name' => null    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -93,7 +99,10 @@ class AnyOfFileJsonldFile implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-            ];
+        'context' => '@context',
+'id' => '@id',
+'type' => '@type',
+'file_name' => 'fileName'    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -101,7 +110,10 @@ class AnyOfFileJsonldFile implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-            ];
+        'context' => 'setContext',
+'id' => 'setId',
+'type' => 'setType',
+'file_name' => 'setFileName'    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -109,7 +121,10 @@ class AnyOfFileJsonldFile implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-            ];
+        'context' => 'getContext',
+'id' => 'getId',
+'type' => 'getType',
+'file_name' => 'getFileName'    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -169,6 +184,10 @@ class AnyOfFileJsonldFile implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['context'] = isset($data['context']) ? $data['context'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['file_name'] = isset($data['file_name']) ? $data['file_name'] : null;
     }
 
     /**
@@ -194,6 +213,102 @@ class AnyOfFileJsonldFile implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets context
+     *
+     * @return OneOfFileUploadJsonldUploadReadContext
+     */
+    public function getContext()
+    {
+        return $this->container['context'];
+    }
+
+    /**
+     * Sets context
+     *
+     * @param OneOfFileUploadJsonldUploadReadContext $context context
+     *
+     * @return $this
+     */
+    public function setContext($context)
+    {
+        $this->container['context'] = $context;
+
+        return $this;
+    }
+
+    /**
+     * Gets id
+     *
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     *
+     * @param string $id id
+     *
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->container['id'] = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets type
+     *
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->container['type'];
+    }
+
+    /**
+     * Sets type
+     *
+     * @param string $type type
+     *
+     * @return $this
+     */
+    public function setType($type)
+    {
+        $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets file_name
+     *
+     * @return string
+     */
+    public function getFileName()
+    {
+        return $this->container['file_name'];
+    }
+
+    /**
+     * Sets file_name
+     *
+     * @param string $file_name file_name
+     *
+     * @return $this
+     */
+    public function setFileName($file_name)
+    {
+        $this->container['file_name'] = $file_name;
+
+        return $this;
+    }
     /**
      * Returns true if offset exists. False otherwise.
      *

@@ -1,6 +1,6 @@
 <?php
 /**
- * FileTest
+ * OneOfFileUploadJsonldUploadReadContextTest
  *
  * PHP version 5
  *
@@ -29,15 +29,15 @@
 namespace VentureLeap\StorageService;
 
 /**
- * FileTest Class Doc Comment
+ * OneOfFileUploadJsonldUploadReadContextTest Class Doc Comment
  *
  * @category    Class
- * @description File
+ * @description OneOfFileUploadJsonldUploadReadContext
  * @package     VentureLeap\StorageService
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class FileTest extends \PHPUnit_Framework_TestCase
+class OneOfFileUploadJsonldUploadReadContextTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -69,86 +69,9 @@ class FileTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "File"
+     * Test "OneOfFileUploadJsonldUploadReadContext"
      */
-    public function testFile()
-    {
-    }
-
-    /**
-     * Test attribute "uuid"
-     */
-    public function testPropertyUuid()
-    {
-    }
-
-    /**
-     * Test attribute "file_name"
-     */
-    public function testPropertyFileName()
-    {
-    }
-
-    /**
-     * Test attribute "original_file_name"
-     */
-    public function testPropertyOriginalFileName()
-    {
-    }
-
-    /**
-     * Test attribute "mime_type"
-     */
-    public function testPropertyMimeType()
-    {
-    }
-
-    /**
-     * Test attribute "size"
-     */
-    public function testPropertySize()
-    {
-    }
-
-    /**
-     * Test attribute "extension"
-     */
-    public function testPropertyExtension()
-    {
-    }
-
-    /**
-     * Test attribute "file_url"
-     */
-    public function testPropertyFileUrl()
-    {
-    }
-
-    /**
-     * Test attribute "encrypted"
-     */
-    public function testPropertyEncrypted()
-    {
-    }
-
-    /**
-     * Test attribute "application_id"
-     */
-    public function testPropertyApplicationId()
-    {
-    }
-
-    /**
-     * Test attribute "created_at"
-     */
-    public function testPropertyCreatedAt()
-    {
-    }
-
-    /**
-     * Test attribute "updated_at"
-     */
-    public function testPropertyUpdatedAt()
+    public function testOneOfFileUploadJsonldUploadReadContext()
     {
     }
 }

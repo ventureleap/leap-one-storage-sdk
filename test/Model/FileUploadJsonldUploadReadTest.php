@@ -1,6 +1,6 @@
 <?php
 /**
- * AnyOfFileJsonldFileTest
+ * FileUploadJsonldUploadReadTest
  *
  * PHP version 5
  *
@@ -29,15 +29,15 @@
 namespace VentureLeap\StorageService;
 
 /**
- * AnyOfFileJsonldFileTest Class Doc Comment
+ * FileUploadJsonldUploadReadTest Class Doc Comment
  *
  * @category    Class
- * @description AnyOfFileJsonldFile
+ * @description FileUploadJsonldUploadRead
  * @package     VentureLeap\StorageService
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class AnyOfFileJsonldFileTest extends \PHPUnit_Framework_TestCase
+class FileUploadJsonldUploadReadTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -69,9 +69,37 @@ class AnyOfFileJsonldFileTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "AnyOfFileJsonldFile"
+     * Test "FileUploadJsonldUploadRead"
      */
-    public function testAnyOfFileJsonldFile()
+    public function testFileUploadJsonldUploadRead()
+    {
+    }
+
+    /**
+     * Test attribute "context"
+     */
+    public function testPropertyContext()
+    {
+    }
+
+    /**
+     * Test attribute "id"
+     */
+    public function testPropertyId()
+    {
+    }
+
+    /**
+     * Test attribute "type"
+     */
+    public function testPropertyType()
+    {
+    }
+
+    /**
+     * Test attribute "file_name"
+     */
+    public function testPropertyFileName()
     {
     }
 }

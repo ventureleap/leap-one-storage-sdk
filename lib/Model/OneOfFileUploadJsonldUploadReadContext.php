@@ -1,6 +1,6 @@
 <?php
 /**
- * AnyOfFileFile
+ * OneOfFileUploadJsonldUploadReadContext
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ use \ArrayAccess;
 use \VentureLeap\StorageService\ObjectSerializer;
 
 /**
- * AnyOfFileFile Class Doc Comment
+ * OneOfFileUploadJsonldUploadReadContext Class Doc Comment
  *
  * @category Class
  * @package  VentureLeap\StorageService
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AnyOfFileFile implements ModelInterface, ArrayAccess
+class OneOfFileUploadJsonldUploadReadContext implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,7 +48,7 @@ class AnyOfFileFile implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AnyOfFileFile';
+    protected static $swaggerModelName = 'OneOfFileUpload.jsonld-upload.readContext';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

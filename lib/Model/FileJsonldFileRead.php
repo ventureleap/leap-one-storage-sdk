@@ -56,9 +56,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'context' => 'OneOfFileJsonldFileReadContext',
-'id' => 'string',
+        'id' => 'string',
 'type' => 'string',
+'context' => 'OneOfFileJsonldFileReadContext',
 'uuid' => 'string',
 'file_name' => 'string',
 'original_file_name' => 'string',
@@ -66,7 +66,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
 'size' => 'int',
 'extension' => 'string',
 'file_url' => 'string',
-'encrypted' => 'bool'    ];
+'encrypted' => 'bool',
+'application_id' => 'string'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -74,9 +75,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'context' => null,
-'id' => null,
+        'id' => null,
 'type' => null,
+'context' => null,
 'uuid' => 'uuid',
 'file_name' => null,
 'original_file_name' => null,
@@ -84,7 +85,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
 'size' => null,
 'extension' => null,
 'file_url' => null,
-'encrypted' => null    ];
+'encrypted' => null,
+'application_id' => null    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -113,9 +115,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'context' => '@context',
-'id' => '@id',
+        'id' => '@id',
 'type' => '@type',
+'context' => '@context',
 'uuid' => 'uuid',
 'file_name' => 'fileName',
 'original_file_name' => 'originalFileName',
@@ -123,7 +125,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
 'size' => 'size',
 'extension' => 'extension',
 'file_url' => 'fileUrl',
-'encrypted' => 'encrypted'    ];
+'encrypted' => 'encrypted',
+'application_id' => 'applicationId'    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -131,9 +134,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'context' => 'setContext',
-'id' => 'setId',
+        'id' => 'setId',
 'type' => 'setType',
+'context' => 'setContext',
 'uuid' => 'setUuid',
 'file_name' => 'setFileName',
 'original_file_name' => 'setOriginalFileName',
@@ -141,7 +144,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
 'size' => 'setSize',
 'extension' => 'setExtension',
 'file_url' => 'setFileUrl',
-'encrypted' => 'setEncrypted'    ];
+'encrypted' => 'setEncrypted',
+'application_id' => 'setApplicationId'    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -149,9 +153,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'context' => 'getContext',
-'id' => 'getId',
+        'id' => 'getId',
 'type' => 'getType',
+'context' => 'getContext',
 'uuid' => 'getUuid',
 'file_name' => 'getFileName',
 'original_file_name' => 'getOriginalFileName',
@@ -159,7 +163,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
 'size' => 'getSize',
 'extension' => 'getExtension',
 'file_url' => 'getFileUrl',
-'encrypted' => 'getEncrypted'    ];
+'encrypted' => 'getEncrypted',
+'application_id' => 'getApplicationId'    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -219,9 +224,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['context'] = isset($data['context']) ? $data['context'] : null;
         $this->container['id'] = isset($data['id']) ? $data['id'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['context'] = isset($data['context']) ? $data['context'] : null;
         $this->container['uuid'] = isset($data['uuid']) ? $data['uuid'] : null;
         $this->container['file_name'] = isset($data['file_name']) ? $data['file_name'] : null;
         $this->container['original_file_name'] = isset($data['original_file_name']) ? $data['original_file_name'] : null;
@@ -230,6 +235,7 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
         $this->container['extension'] = isset($data['extension']) ? $data['extension'] : null;
         $this->container['file_url'] = isset($data['file_url']) ? $data['file_url'] : null;
         $this->container['encrypted'] = isset($data['encrypted']) ? $data['encrypted'] : null;
+        $this->container['application_id'] = isset($data['application_id']) ? $data['application_id'] : null;
     }
 
     /**
@@ -255,30 +261,6 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets context
-     *
-     * @return OneOfFileJsonldFileReadContext
-     */
-    public function getContext()
-    {
-        return $this->container['context'];
-    }
-
-    /**
-     * Sets context
-     *
-     * @param OneOfFileJsonldFileReadContext $context context
-     *
-     * @return $this
-     */
-    public function setContext($context)
-    {
-        $this->container['context'] = $context;
-
-        return $this;
-    }
 
     /**
      * Gets id
@@ -324,6 +306,30 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
     public function setType($type)
     {
         $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets context
+     *
+     * @return OneOfFileJsonldFileReadContext
+     */
+    public function getContext()
+    {
+        return $this->container['context'];
+    }
+
+    /**
+     * Sets context
+     *
+     * @param OneOfFileJsonldFileReadContext $context context
+     *
+     * @return $this
+     */
+    public function setContext($context)
+    {
+        $this->container['context'] = $context;
 
         return $this;
     }
@@ -516,6 +522,30 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
     public function setEncrypted($encrypted)
     {
         $this->container['encrypted'] = $encrypted;
+
+        return $this;
+    }
+
+    /**
+     * Gets application_id
+     *
+     * @return string
+     */
+    public function getApplicationId()
+    {
+        return $this->container['application_id'];
+    }
+
+    /**
+     * Sets application_id
+     *
+     * @param string $application_id application_id
+     *
+     * @return $this
+     */
+    public function setApplicationId($application_id)
+    {
+        $this->container['application_id'] = $application_id;
 
         return $this;
     }

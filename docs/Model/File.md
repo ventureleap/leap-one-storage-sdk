@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**file** | [**AnyOfFileFile**](AnyOfFileFile.md) |  | [optional] 
 **uuid** | **string** |  | [optional] 
 **file_name** | **string** |  | [optional] 
 **original_file_name** | **string** |  | [optional] 
