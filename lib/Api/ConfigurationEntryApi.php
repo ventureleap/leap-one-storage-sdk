@@ -563,11 +563,11 @@ class ConfigurationEntryApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/ld+json']
+                ['application/json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/ld+json'],
+                ['application/json'],
                 []
             );
         }
@@ -830,11 +830,11 @@ class ConfigurationEntryApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/ld+json']
+                ['application/json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/ld+json'],
+                ['application/json'],
                 []
             );
         }
@@ -1092,12 +1092,12 @@ class ConfigurationEntryApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/ld+json']
+                ['application/json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/ld+json'],
-                ['application/ld+json']
+                ['application/json'],
+                ['application/json']
             );
         }
 
@@ -1373,12 +1373,12 @@ class ConfigurationEntryApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/ld+json']
+                ['application/json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/ld+json'],
-                ['application/ld+json']
+                ['application/json'],
+                ['application/json']
             );
         }
 
