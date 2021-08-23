@@ -324,11 +324,11 @@ class FileApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
+                ['application/ld+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
+                ['application/ld+json'],
                 []
             );
         }
@@ -591,11 +591,11 @@ class FileApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
+                ['application/ld+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
+                ['application/ld+json'],
                 []
             );
         }
@@ -872,11 +872,11 @@ class FileApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
+                ['application/ld+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
+                ['application/ld+json'],
                 ['application/merge-patch+json']
             );
         }
@@ -1139,11 +1139,11 @@ class FileApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
+                ['application/ld+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
+                ['application/ld+json'],
                 ['multipart/form-data']
             );
         }
@@ -1420,12 +1420,12 @@ class FileApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
+                ['application/ld+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
-                ['application/json']
+                ['application/ld+json'],
+                ['application/ld+json']
             );
         }
 
