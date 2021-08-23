@@ -1,9 +1,9 @@
-# FileJsonldRead
+# FileJsonldFileRead
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | [**OneOfFileJsonldReadContext**](OneOfFileJsonldReadContext.md) |  | [optional] 
+**context** | [**OneOfFileJsonldFileReadContext**](OneOfFileJsonldFileReadContext.md) |  | [optional] 
 **id** | **string** |  | [optional] 
 **type** | **string** |  | [optional] 
 **uuid** | **string** |  | [optional] 

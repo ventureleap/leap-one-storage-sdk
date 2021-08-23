@@ -56,7 +56,7 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'hydramember' => '\VentureLeap\StorageService\Model\FileJsonldRead[]',
+        'hydramember' => '\VentureLeap\StorageService\Model\FileJsonldFileRead[]',
 'hydratotal_items' => 'int',
 'hydraview' => '\VentureLeap\StorageService\Model\InlineResponse200Hydraview',
 'hydrasearch' => '\VentureLeap\StorageService\Model\InlineResponse200Hydrasearch'    ];
@@ -220,7 +220,7 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     /**
      * Gets hydramember
      *
-     * @return \VentureLeap\StorageService\Model\FileJsonldRead[]
+     * @return \VentureLeap\StorageService\Model\FileJsonldFileRead[]
      */
     public function getHydramember()
     {
@@ -230,7 +230,7 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     /**
      * Sets hydramember
      *
-     * @param \VentureLeap\StorageService\Model\FileJsonldRead[] $hydramember hydramember
+     * @param \VentureLeap\StorageService\Model\FileJsonldFileRead[] $hydramember hydramember
      *
      * @return $this
      */

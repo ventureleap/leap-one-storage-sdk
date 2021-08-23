@@ -1,4 +1,4 @@
-# OneOfFileJsonldWriteContext
+# OneOfFileJsonldFileReadContext
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,6 +1,6 @@
 <?php
 /**
- * FileJsonldWriteTest
+ * FileJsonldFileReadTest
  *
  * PHP version 5
  *
@@ -29,15 +29,15 @@
 namespace VentureLeap\StorageService;
 
 /**
- * FileJsonldWriteTest Class Doc Comment
+ * FileJsonldFileReadTest Class Doc Comment
  *
  * @category    Class
- * @description FileJsonldWrite
+ * @description FileJsonldFileRead
  * @package     VentureLeap\StorageService
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class FileJsonldWriteTest extends \PHPUnit_Framework_TestCase
+class FileJsonldFileReadTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -69,9 +69,9 @@ class FileJsonldWriteTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "FileJsonldWrite"
+     * Test "FileJsonldFileRead"
      */
-    public function testFileJsonldWrite()
+    public function testFileJsonldFileRead()
     {
     }
 
@@ -97,9 +97,58 @@ class FileJsonldWriteTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "application_id"
+     * Test attribute "uuid"
      */
-    public function testPropertyApplicationId()
+    public function testPropertyUuid()
+    {
+    }
+
+    /**
+     * Test attribute "file_name"
+     */
+    public function testPropertyFileName()
+    {
+    }
+
+    /**
+     * Test attribute "original_file_name"
+     */
+    public function testPropertyOriginalFileName()
+    {
+    }
+
+    /**
+     * Test attribute "mime_type"
+     */
+    public function testPropertyMimeType()
+    {
+    }
+
+    /**
+     * Test attribute "size"
+     */
+    public function testPropertySize()
+    {
+    }
+
+    /**
+     * Test attribute "extension"
+     */
+    public function testPropertyExtension()
+    {
+    }
+
+    /**
+     * Test attribute "file_url"
+     */
+    public function testPropertyFileUrl()
+    {
+    }
+
+    /**
+     * Test attribute "encrypted"
+     */
+    public function testPropertyEncrypted()
     {
     }
 }

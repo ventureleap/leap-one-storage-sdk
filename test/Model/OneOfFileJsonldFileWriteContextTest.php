@@ -1,6 +1,6 @@
 <?php
 /**
- * FileWriteTest
+ * OneOfFileJsonldFileWriteContextTest
  *
  * PHP version 5
  *
@@ -29,15 +29,15 @@
 namespace VentureLeap\StorageService;
 
 /**
- * FileWriteTest Class Doc Comment
+ * OneOfFileJsonldFileWriteContextTest Class Doc Comment
  *
  * @category    Class
- * @description FileWrite
+ * @description OneOfFileJsonldFileWriteContext
  * @package     VentureLeap\StorageService
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class FileWriteTest extends \PHPUnit_Framework_TestCase
+class OneOfFileJsonldFileWriteContextTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -69,16 +69,9 @@ class FileWriteTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "FileWrite"
+     * Test "OneOfFileJsonldFileWriteContext"
      */
-    public function testFileWrite()
-    {
-    }
-
-    /**
-     * Test attribute "application_id"
-     */
-    public function testPropertyApplicationId()
+    public function testOneOfFileJsonldFileWriteContext()
     {
     }
 }

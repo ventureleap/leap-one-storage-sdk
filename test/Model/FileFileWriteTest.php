@@ -1,6 +1,6 @@
 <?php
 /**
- * FileJsonldReadTest
+ * FileFileWriteTest
  *
  * PHP version 5
  *
@@ -29,15 +29,15 @@
 namespace VentureLeap\StorageService;
 
 /**
- * FileJsonldReadTest Class Doc Comment
+ * FileFileWriteTest Class Doc Comment
  *
  * @category    Class
- * @description FileJsonldRead
+ * @description FileFileWrite
  * @package     VentureLeap\StorageService
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class FileJsonldReadTest extends \PHPUnit_Framework_TestCase
+class FileFileWriteTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -69,86 +69,16 @@ class FileJsonldReadTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "FileJsonldRead"
+     * Test "FileFileWrite"
      */
-    public function testFileJsonldRead()
+    public function testFileFileWrite()
     {
     }
 
     /**
-     * Test attribute "context"
+     * Test attribute "application_id"
      */
-    public function testPropertyContext()
-    {
-    }
-
-    /**
-     * Test attribute "id"
-     */
-    public function testPropertyId()
-    {
-    }
-
-    /**
-     * Test attribute "type"
-     */
-    public function testPropertyType()
-    {
-    }
-
-    /**
-     * Test attribute "uuid"
-     */
-    public function testPropertyUuid()
-    {
-    }
-
-    /**
-     * Test attribute "file_name"
-     */
-    public function testPropertyFileName()
-    {
-    }
-
-    /**
-     * Test attribute "original_file_name"
-     */
-    public function testPropertyOriginalFileName()
-    {
-    }
-
-    /**
-     * Test attribute "mime_type"
-     */
-    public function testPropertyMimeType()
-    {
-    }
-
-    /**
-     * Test attribute "size"
-     */
-    public function testPropertySize()
-    {
-    }
-
-    /**
-     * Test attribute "extension"
-     */
-    public function testPropertyExtension()
-    {
-    }
-
-    /**
-     * Test attribute "file_url"
-     */
-    public function testPropertyFileUrl()
-    {
-    }
-
-    /**
-     * Test attribute "encrypted"
-     */
-    public function testPropertyEncrypted()
+    public function testPropertyApplicationId()
     {
     }
 }

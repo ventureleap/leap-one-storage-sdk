@@ -1,6 +1,6 @@
 <?php
 /**
- * FileJsonldRead
+ * FileJsonldFileRead
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ use \ArrayAccess;
 use \VentureLeap\StorageService\ObjectSerializer;
 
 /**
- * FileJsonldRead Class Doc Comment
+ * FileJsonldFileRead Class Doc Comment
  *
  * @category Class
  * @package  VentureLeap\StorageService
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FileJsonldRead implements ModelInterface, ArrayAccess
+class FileJsonldFileRead implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,7 +48,7 @@ class FileJsonldRead implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'File.jsonld-Read';
+    protected static $swaggerModelName = 'File.jsonld-FileRead';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -56,7 +56,7 @@ class FileJsonldRead implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'context' => 'OneOfFileJsonldReadContext',
+        'context' => 'OneOfFileJsonldFileReadContext',
 'id' => 'string',
 'type' => 'string',
 'uuid' => 'string',
@@ -259,7 +259,7 @@ class FileJsonldRead implements ModelInterface, ArrayAccess
     /**
      * Gets context
      *
-     * @return OneOfFileJsonldReadContext
+     * @return OneOfFileJsonldFileReadContext
      */
     public function getContext()
     {
@@ -269,7 +269,7 @@ class FileJsonldRead implements ModelInterface, ArrayAccess
     /**
      * Sets context
      *
-     * @param OneOfFileJsonldReadContext $context context
+     * @param OneOfFileJsonldFileReadContext $context context
      *
      * @return $this
      */

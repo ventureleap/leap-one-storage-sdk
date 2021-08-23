@@ -397,7 +397,7 @@ class FileApi
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \VentureLeap\StorageService\Model\FileJsonldRead
+     * @return \VentureLeap\StorageService\Model\FileJsonldFileRead
      */
     public function getFileItem($uuid)
     {
@@ -414,11 +414,11 @@ class FileApi
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \VentureLeap\StorageService\Model\FileJsonldRead, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \VentureLeap\StorageService\Model\FileJsonldFileRead, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFileItemWithHttpInfo($uuid)
     {
-        $returnType = '\VentureLeap\StorageService\Model\FileJsonldRead';
+        $returnType = '\VentureLeap\StorageService\Model\FileJsonldFileRead';
         $request = $this->getFileItemRequest($uuid);
 
         try {
@@ -470,7 +470,7 @@ class FileApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\VentureLeap\StorageService\Model\FileJsonldRead',
+                        '\VentureLeap\StorageService\Model\FileJsonldFileRead',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -512,7 +512,7 @@ class FileApi
      */
     public function getFileItemAsyncWithHttpInfo($uuid)
     {
-        $returnType = '\VentureLeap\StorageService\Model\FileJsonldRead';
+        $returnType = '\VentureLeap\StorageService\Model\FileJsonldFileRead';
         $request = $this->getFileItemRequest($uuid);
 
         return $this->client
@@ -660,12 +660,12 @@ class FileApi
      *
      * Updates the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileFileWrite $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \VentureLeap\StorageService\Model\FileJsonldRead
+     * @return \VentureLeap\StorageService\Model\FileJsonldFileRead
      */
     public function patchFileItem($body, $uuid)
     {
@@ -678,16 +678,16 @@ class FileApi
      *
      * Updates the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileFileWrite $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \VentureLeap\StorageService\Model\FileJsonldRead, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \VentureLeap\StorageService\Model\FileJsonldFileRead, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchFileItemWithHttpInfo($body, $uuid)
     {
-        $returnType = '\VentureLeap\StorageService\Model\FileJsonldRead';
+        $returnType = '\VentureLeap\StorageService\Model\FileJsonldFileRead';
         $request = $this->patchFileItemRequest($body, $uuid);
 
         try {
@@ -739,7 +739,7 @@ class FileApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\VentureLeap\StorageService\Model\FileJsonldRead',
+                        '\VentureLeap\StorageService\Model\FileJsonldFileRead',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -754,7 +754,7 @@ class FileApi
      *
      * Updates the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileFileWrite $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException
@@ -775,7 +775,7 @@ class FileApi
      *
      * Updates the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileFileWrite $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException
@@ -783,7 +783,7 @@ class FileApi
      */
     public function patchFileItemAsyncWithHttpInfo($body, $uuid)
     {
-        $returnType = '\VentureLeap\StorageService\Model\FileJsonldRead';
+        $returnType = '\VentureLeap\StorageService\Model\FileJsonldFileRead';
         $request = $this->patchFileItemRequest($body, $uuid);
 
         return $this->client
@@ -826,7 +826,7 @@ class FileApi
     /**
      * Create request for operation 'patchFileItem'
      *
-     * @param  \VentureLeap\StorageService\Model\FileWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileFileWrite $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException
@@ -946,7 +946,7 @@ class FileApi
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \VentureLeap\StorageService\Model\FileJsonldRead
+     * @return \VentureLeap\StorageService\Model\FileJsonldFileRead
      */
     public function postFileCollection($file = null, $encrypt = null)
     {
@@ -964,11 +964,11 @@ class FileApi
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \VentureLeap\StorageService\Model\FileJsonldRead, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \VentureLeap\StorageService\Model\FileJsonldFileRead, HTTP status code, HTTP response headers (array of strings)
      */
     public function postFileCollectionWithHttpInfo($file = null, $encrypt = null)
     {
-        $returnType = '\VentureLeap\StorageService\Model\FileJsonldRead';
+        $returnType = '\VentureLeap\StorageService\Model\FileJsonldFileRead';
         $request = $this->postFileCollectionRequest($file, $encrypt);
 
         try {
@@ -1020,7 +1020,7 @@ class FileApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\VentureLeap\StorageService\Model\FileJsonldRead',
+                        '\VentureLeap\StorageService\Model\FileJsonldFileRead',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1064,7 +1064,7 @@ class FileApi
      */
     public function postFileCollectionAsyncWithHttpInfo($file = null, $encrypt = null)
     {
-        $returnType = '\VentureLeap\StorageService\Model\FileJsonldRead';
+        $returnType = '\VentureLeap\StorageService\Model\FileJsonldFileRead';
         $request = $this->postFileCollectionRequest($file, $encrypt);
 
         return $this->client
@@ -1208,12 +1208,12 @@ class FileApi
      *
      * Replaces the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileJsonldWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileJsonldFileWrite $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \VentureLeap\StorageService\Model\FileJsonldRead
+     * @return \VentureLeap\StorageService\Model\FileJsonldFileRead
      */
     public function putFileItem($body, $uuid)
     {
@@ -1226,16 +1226,16 @@ class FileApi
      *
      * Replaces the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileJsonldWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileJsonldFileWrite $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \VentureLeap\StorageService\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \VentureLeap\StorageService\Model\FileJsonldRead, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \VentureLeap\StorageService\Model\FileJsonldFileRead, HTTP status code, HTTP response headers (array of strings)
      */
     public function putFileItemWithHttpInfo($body, $uuid)
     {
-        $returnType = '\VentureLeap\StorageService\Model\FileJsonldRead';
+        $returnType = '\VentureLeap\StorageService\Model\FileJsonldFileRead';
         $request = $this->putFileItemRequest($body, $uuid);
 
         try {
@@ -1287,7 +1287,7 @@ class FileApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\VentureLeap\StorageService\Model\FileJsonldRead',
+                        '\VentureLeap\StorageService\Model\FileJsonldFileRead',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1302,7 +1302,7 @@ class FileApi
      *
      * Replaces the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileJsonldWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileJsonldFileWrite $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException
@@ -1323,7 +1323,7 @@ class FileApi
      *
      * Replaces the File resource.
      *
-     * @param  \VentureLeap\StorageService\Model\FileJsonldWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileJsonldFileWrite $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException
@@ -1331,7 +1331,7 @@ class FileApi
      */
     public function putFileItemAsyncWithHttpInfo($body, $uuid)
     {
-        $returnType = '\VentureLeap\StorageService\Model\FileJsonldRead';
+        $returnType = '\VentureLeap\StorageService\Model\FileJsonldFileRead';
         $request = $this->putFileItemRequest($body, $uuid);
 
         return $this->client
@@ -1374,7 +1374,7 @@ class FileApi
     /**
      * Create request for operation 'putFileItem'
      *
-     * @param  \VentureLeap\StorageService\Model\FileJsonldWrite $body The updated File resource (required)
+     * @param  \VentureLeap\StorageService\Model\FileJsonldFileWrite $body The updated File resource (required)
      * @param  string $uuid Resource identifier (required)
      *
      * @throws \InvalidArgumentException

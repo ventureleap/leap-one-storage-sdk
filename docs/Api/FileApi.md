@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFileItem**
-> \VentureLeap\StorageService\Model\FileJsonldRead getFileItem($uuid)
+> \VentureLeap\StorageService\Model\FileJsonldFileRead getFileItem($uuid)
 
 Retrieves a File resource.
 
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\VentureLeap\StorageService\Model\FileJsonldRead**](../Model/FileJsonldRead.md)
+[**\VentureLeap\StorageService\Model\FileJsonldFileRead**](../Model/FileJsonldFileRead.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **patchFileItem**
-> \VentureLeap\StorageService\Model\FileJsonldRead patchFileItem($body, $uuid)
+> \VentureLeap\StorageService\Model\FileJsonldFileRead patchFileItem($body, $uuid)
 
 Updates the File resource.
 
@@ -150,7 +150,7 @@ $apiInstance = new VentureLeap\StorageService\Api\FileApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \VentureLeap\StorageService\Model\FileWrite(); // \VentureLeap\StorageService\Model\FileWrite | The updated File resource
+$body = new \VentureLeap\StorageService\Model\FileFileWrite(); // \VentureLeap\StorageService\Model\FileFileWrite | The updated File resource
 $uuid = "uuid_example"; // string | Resource identifier
 
 try {
@@ -166,12 +166,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\VentureLeap\StorageService\Model\FileWrite**](../Model/FileWrite.md)| The updated File resource |
+ **body** | [**\VentureLeap\StorageService\Model\FileFileWrite**](../Model/FileFileWrite.md)| The updated File resource |
  **uuid** | **string**| Resource identifier |
 
 ### Return type
 
-[**\VentureLeap\StorageService\Model\FileJsonldRead**](../Model/FileJsonldRead.md)
+[**\VentureLeap\StorageService\Model\FileJsonldFileRead**](../Model/FileJsonldFileRead.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postFileCollection**
-> \VentureLeap\StorageService\Model\FileJsonldRead postFileCollection($file, $encrypt)
+> \VentureLeap\StorageService\Model\FileJsonldFileRead postFileCollection($file, $encrypt)
 
 Creates a File resource.
 
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\VentureLeap\StorageService\Model\FileJsonldRead**](../Model/FileJsonldRead.md)
+[**\VentureLeap\StorageService\Model\FileJsonldFileRead**](../Model/FileJsonldFileRead.md)
 
 ### Authorization
 
@@ -241,7 +241,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putFileItem**
-> \VentureLeap\StorageService\Model\FileJsonldRead putFileItem($body, $uuid)
+> \VentureLeap\StorageService\Model\FileJsonldFileRead putFileItem($body, $uuid)
 
 Replaces the File resource.
 
@@ -262,7 +262,7 @@ $apiInstance = new VentureLeap\StorageService\Api\FileApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \VentureLeap\StorageService\Model\FileJsonldWrite(); // \VentureLeap\StorageService\Model\FileJsonldWrite | The updated File resource
+$body = new \VentureLeap\StorageService\Model\FileJsonldFileWrite(); // \VentureLeap\StorageService\Model\FileJsonldFileWrite | The updated File resource
 $uuid = "uuid_example"; // string | Resource identifier
 
 try {
@@ -278,12 +278,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\VentureLeap\StorageService\Model\FileJsonldWrite**](../Model/FileJsonldWrite.md)| The updated File resource |
+ **body** | [**\VentureLeap\StorageService\Model\FileJsonldFileWrite**](../Model/FileJsonldFileWrite.md)| The updated File resource |
  **uuid** | **string**| Resource identifier |
 
 ### Return type
 
-[**\VentureLeap\StorageService\Model\FileJsonldRead**](../Model/FileJsonldRead.md)
+[**\VentureLeap\StorageService\Model\FileJsonldFileRead**](../Model/FileJsonldFileRead.md)
 
 ### Authorization
 
