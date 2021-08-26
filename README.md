@@ -197,7 +197,6 @@ Class | Method | HTTP request | Description
  - [OneOfConfigurationEntryJsonldConfigurationReadContext](docs/Model/OneOfConfigurationEntryJsonldConfigurationReadContext.md)
  - [OneOfConfigurationEntryJsonldConfigurationWriteContext](docs/Model/OneOfConfigurationEntryJsonldConfigurationWriteContext.md)
  - [OneOfFileJsonldContext](docs/Model/OneOfFileJsonldContext.md)
- - [OneOfFileJsonldFileReadContext](docs/Model/OneOfFileJsonldFileReadContext.md)
 
 ## Documentation For Authorization
 

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | [**OneOfFileJsonldFileReadContext**](OneOfFileJsonldFileReadContext.md) |  | [optional] 
+**context** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 **type** | **string** |  | [optional] 
 **uuid** | **string** |  | [optional] 

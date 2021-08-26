@@ -56,7 +56,7 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'context' => 'OneOfFileJsonldFileReadContext',
+        'context' => 'string',
 'id' => 'string',
 'type' => 'string',
 'uuid' => 'string',
@@ -277,7 +277,7 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
     /**
      * Gets context
      *
-     * @return OneOfFileJsonldFileReadContext
+     * @return string
      */
     public function getContext()
     {
@@ -287,7 +287,7 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
     /**
      * Sets context
      *
-     * @param OneOfFileJsonldFileReadContext $context context
+     * @param string $context context
      *
      * @return $this
      */
