@@ -132,13 +132,6 @@ class FileTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "application_id"
-     */
-    public function testPropertyApplicationId()
-    {
-    }
-
-    /**
      * Test attribute "created_at"
      */
     public function testPropertyCreatedAt()
@@ -149,6 +142,13 @@ class FileTest extends \PHPUnit_Framework_TestCase
      * Test attribute "updated_at"
      */
     public function testPropertyUpdatedAt()
+    {
+    }
+
+    /**
+     * Test attribute "application_id"
+     */
+    public function testPropertyApplicationId()
     {
     }
 }

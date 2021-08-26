@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**getFileCollection**](FileApi.md#getfilecollection) | **GET** /storage/files | Retrieves the collection of File resources.
 [**getFileItem**](FileApi.md#getfileitem) | **GET** /storage/files/{uuid} | Retrieves a File resource.
 [**patchFileItem**](FileApi.md#patchfileitem) | **PATCH** /storage/files/{uuid} | Updates the File resource.
+[**postFileCollection**](FileApi.md#postfilecollection) | **POST** /storage/files | Creates a File resource.
 [**putFileItem**](FileApi.md#putfileitem) | **PUT** /storage/files/{uuid} | Replaces the File resource.
 
 # **getFileCollection**
@@ -179,6 +180,62 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/merge-patch+json
+ - **Accept**: application/ld+json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **postFileCollection**
+> \VentureLeap\StorageService\Model\FileJsonldFileRead postFileCollection($file, $encrypt)
+
+Creates a File resource.
+
+Creates a File resource.
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+// Configure API key authorization: apiKey
+$config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = VentureLeap\StorageService\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new VentureLeap\StorageService\Api\FileApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$file = "file_example"; // string | 
+$encrypt = true; // bool | 
+
+try {
+    $result = $apiInstance->postFileCollection($file, $encrypt);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling FileApi->postFileCollection: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **string****string**|  | [optional]
+ **encrypt** | **bool**|  | [optional]
+
+### Return type
+
+[**\VentureLeap\StorageService\Model\FileJsonldFileRead**](../Model/FileJsonldFileRead.md)
+
+### Authorization
+
+[apiKey](../../README.md#apiKey)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/ld+json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

@@ -67,9 +67,9 @@ class FileJsonld implements ModelInterface, ArrayAccess
 'extension' => 'string',
 'file_url' => 'string',
 'encrypted' => 'bool',
-'application_id' => 'string',
 'created_at' => '\DateTime',
-'updated_at' => '\DateTime'    ];
+'updated_at' => '\DateTime',
+'application_id' => 'string'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -88,9 +88,9 @@ class FileJsonld implements ModelInterface, ArrayAccess
 'extension' => null,
 'file_url' => null,
 'encrypted' => null,
-'application_id' => null,
 'created_at' => 'date-time',
-'updated_at' => 'date-time'    ];
+'updated_at' => 'date-time',
+'application_id' => null    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -130,9 +130,9 @@ class FileJsonld implements ModelInterface, ArrayAccess
 'extension' => 'extension',
 'file_url' => 'fileUrl',
 'encrypted' => 'encrypted',
-'application_id' => 'applicationId',
 'created_at' => 'createdAt',
-'updated_at' => 'updatedAt'    ];
+'updated_at' => 'updatedAt',
+'application_id' => 'applicationId'    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -151,9 +151,9 @@ class FileJsonld implements ModelInterface, ArrayAccess
 'extension' => 'setExtension',
 'file_url' => 'setFileUrl',
 'encrypted' => 'setEncrypted',
-'application_id' => 'setApplicationId',
 'created_at' => 'setCreatedAt',
-'updated_at' => 'setUpdatedAt'    ];
+'updated_at' => 'setUpdatedAt',
+'application_id' => 'setApplicationId'    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -172,9 +172,9 @@ class FileJsonld implements ModelInterface, ArrayAccess
 'extension' => 'getExtension',
 'file_url' => 'getFileUrl',
 'encrypted' => 'getEncrypted',
-'application_id' => 'getApplicationId',
 'created_at' => 'getCreatedAt',
-'updated_at' => 'getUpdatedAt'    ];
+'updated_at' => 'getUpdatedAt',
+'application_id' => 'getApplicationId'    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -245,9 +245,9 @@ class FileJsonld implements ModelInterface, ArrayAccess
         $this->container['extension'] = isset($data['extension']) ? $data['extension'] : null;
         $this->container['file_url'] = isset($data['file_url']) ? $data['file_url'] : null;
         $this->container['encrypted'] = isset($data['encrypted']) ? $data['encrypted'] : null;
-        $this->container['application_id'] = isset($data['application_id']) ? $data['application_id'] : null;
         $this->container['created_at'] = isset($data['created_at']) ? $data['created_at'] : null;
         $this->container['updated_at'] = isset($data['updated_at']) ? $data['updated_at'] : null;
+        $this->container['application_id'] = isset($data['application_id']) ? $data['application_id'] : null;
     }
 
     /**
@@ -539,30 +539,6 @@ class FileJsonld implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets application_id
-     *
-     * @return string
-     */
-    public function getApplicationId()
-    {
-        return $this->container['application_id'];
-    }
-
-    /**
-     * Sets application_id
-     *
-     * @param string $application_id application_id
-     *
-     * @return $this
-     */
-    public function setApplicationId($application_id)
-    {
-        $this->container['application_id'] = $application_id;
-
-        return $this;
-    }
-
-    /**
      * Gets created_at
      *
      * @return \DateTime
@@ -606,6 +582,30 @@ class FileJsonld implements ModelInterface, ArrayAccess
     public function setUpdatedAt($updated_at)
     {
         $this->container['updated_at'] = $updated_at;
+
+        return $this;
+    }
+
+    /**
+     * Gets application_id
+     *
+     * @return string
+     */
+    public function getApplicationId()
+    {
+        return $this->container['application_id'];
+    }
+
+    /**
+     * Sets application_id
+     *
+     * @param string $application_id application_id
+     *
+     * @return $this
+     */
+    public function setApplicationId($application_id)
+    {
+        $this->container['application_id'] = $application_id;
 
         return $this;
     }

@@ -56,9 +56,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'string',
+        'context' => 'OneOfFileJsonldFileReadContext',
+'id' => 'string',
 'type' => 'string',
-'context' => 'OneOfFileJsonldFileReadContext',
 'uuid' => 'string',
 'file_name' => 'string',
 'original_file_name' => 'string',
@@ -67,6 +67,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
 'extension' => 'string',
 'file_url' => 'string',
 'encrypted' => 'bool',
+'created_at' => '\DateTime',
+'updated_at' => '\DateTime',
 'application_id' => 'string'    ];
 
     /**
@@ -75,9 +77,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'id' => null,
+        'context' => null,
+'id' => null,
 'type' => null,
-'context' => null,
 'uuid' => 'uuid',
 'file_name' => null,
 'original_file_name' => null,
@@ -86,6 +88,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
 'extension' => null,
 'file_url' => null,
 'encrypted' => null,
+'created_at' => 'date-time',
+'updated_at' => 'date-time',
 'application_id' => null    ];
 
     /**
@@ -115,9 +119,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => '@id',
+        'context' => '@context',
+'id' => '@id',
 'type' => '@type',
-'context' => '@context',
 'uuid' => 'uuid',
 'file_name' => 'fileName',
 'original_file_name' => 'originalFileName',
@@ -126,6 +130,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
 'extension' => 'extension',
 'file_url' => 'fileUrl',
 'encrypted' => 'encrypted',
+'created_at' => 'createdAt',
+'updated_at' => 'updatedAt',
 'application_id' => 'applicationId'    ];
 
     /**
@@ -134,9 +140,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
+        'context' => 'setContext',
+'id' => 'setId',
 'type' => 'setType',
-'context' => 'setContext',
 'uuid' => 'setUuid',
 'file_name' => 'setFileName',
 'original_file_name' => 'setOriginalFileName',
@@ -145,6 +151,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
 'extension' => 'setExtension',
 'file_url' => 'setFileUrl',
 'encrypted' => 'setEncrypted',
+'created_at' => 'setCreatedAt',
+'updated_at' => 'setUpdatedAt',
 'application_id' => 'setApplicationId'    ];
 
     /**
@@ -153,9 +161,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
+        'context' => 'getContext',
+'id' => 'getId',
 'type' => 'getType',
-'context' => 'getContext',
 'uuid' => 'getUuid',
 'file_name' => 'getFileName',
 'original_file_name' => 'getOriginalFileName',
@@ -164,6 +172,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
 'extension' => 'getExtension',
 'file_url' => 'getFileUrl',
 'encrypted' => 'getEncrypted',
+'created_at' => 'getCreatedAt',
+'updated_at' => 'getUpdatedAt',
 'application_id' => 'getApplicationId'    ];
 
     /**
@@ -224,9 +234,9 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['context'] = isset($data['context']) ? $data['context'] : null;
         $this->container['id'] = isset($data['id']) ? $data['id'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['context'] = isset($data['context']) ? $data['context'] : null;
         $this->container['uuid'] = isset($data['uuid']) ? $data['uuid'] : null;
         $this->container['file_name'] = isset($data['file_name']) ? $data['file_name'] : null;
         $this->container['original_file_name'] = isset($data['original_file_name']) ? $data['original_file_name'] : null;
@@ -235,6 +245,8 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
         $this->container['extension'] = isset($data['extension']) ? $data['extension'] : null;
         $this->container['file_url'] = isset($data['file_url']) ? $data['file_url'] : null;
         $this->container['encrypted'] = isset($data['encrypted']) ? $data['encrypted'] : null;
+        $this->container['created_at'] = isset($data['created_at']) ? $data['created_at'] : null;
+        $this->container['updated_at'] = isset($data['updated_at']) ? $data['updated_at'] : null;
         $this->container['application_id'] = isset($data['application_id']) ? $data['application_id'] : null;
     }
 
@@ -261,6 +273,30 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets context
+     *
+     * @return OneOfFileJsonldFileReadContext
+     */
+    public function getContext()
+    {
+        return $this->container['context'];
+    }
+
+    /**
+     * Sets context
+     *
+     * @param OneOfFileJsonldFileReadContext $context context
+     *
+     * @return $this
+     */
+    public function setContext($context)
+    {
+        $this->container['context'] = $context;
+
+        return $this;
+    }
 
     /**
      * Gets id
@@ -306,30 +342,6 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
     public function setType($type)
     {
         $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets context
-     *
-     * @return OneOfFileJsonldFileReadContext
-     */
-    public function getContext()
-    {
-        return $this->container['context'];
-    }
-
-    /**
-     * Sets context
-     *
-     * @param OneOfFileJsonldFileReadContext $context context
-     *
-     * @return $this
-     */
-    public function setContext($context)
-    {
-        $this->container['context'] = $context;
 
         return $this;
     }
@@ -522,6 +534,54 @@ class FileJsonldFileRead implements ModelInterface, ArrayAccess
     public function setEncrypted($encrypted)
     {
         $this->container['encrypted'] = $encrypted;
+
+        return $this;
+    }
+
+    /**
+     * Gets created_at
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->container['created_at'];
+    }
+
+    /**
+     * Sets created_at
+     *
+     * @param \DateTime $created_at created_at
+     *
+     * @return $this
+     */
+    public function setCreatedAt($created_at)
+    {
+        $this->container['created_at'] = $created_at;
+
+        return $this;
+    }
+
+    /**
+     * Gets updated_at
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->container['updated_at'];
+    }
+
+    /**
+     * Sets updated_at
+     *
+     * @param \DateTime $updated_at updated_at
+     *
+     * @return $this
+     */
+    public function setUpdatedAt($updated_at)
+    {
+        $this->container['updated_at'] = $updated_at;
 
         return $this;
     }

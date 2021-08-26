@@ -178,8 +178,8 @@ Class | Method | HTTP request | Description
 *FileApi* | [**getFileCollection**](docs/Api/FileApi.md#getfilecollection) | **GET** /storage/files | Retrieves the collection of File resources.
 *FileApi* | [**getFileItem**](docs/Api/FileApi.md#getfileitem) | **GET** /storage/files/{uuid} | Retrieves a File resource.
 *FileApi* | [**patchFileItem**](docs/Api/FileApi.md#patchfileitem) | **PATCH** /storage/files/{uuid} | Updates the File resource.
+*FileApi* | [**postFileCollection**](docs/Api/FileApi.md#postfilecollection) | **POST** /storage/files | Creates a File resource.
 *FileApi* | [**putFileItem**](docs/Api/FileApi.md#putfileitem) | **PUT** /storage/files/{uuid} | Replaces the File resource.
-*FileUploadApi* | [**postFileUploadCollection**](docs/Api/FileUploadApi.md#postfileuploadcollection) | **POST** /storage/files/upload | Creates a FileUpload resource.
 
 ## Documentation For Models
 
@@ -189,7 +189,6 @@ Class | Method | HTTP request | Description
  - [File](docs/Model/File.md)
  - [FileJsonld](docs/Model/FileJsonld.md)
  - [FileJsonldFileRead](docs/Model/FileJsonldFileRead.md)
- - [FileUploadJsonldUploadRead](docs/Model/FileUploadJsonldUploadRead.md)
  - [InlineResponse200](docs/Model/InlineResponse200.md)
  - [InlineResponse2001](docs/Model/InlineResponse2001.md)
  - [InlineResponse200Hydrasearch](docs/Model/InlineResponse200Hydrasearch.md)
@@ -199,7 +198,6 @@ Class | Method | HTTP request | Description
  - [OneOfConfigurationEntryJsonldConfigurationWriteContext](docs/Model/OneOfConfigurationEntryJsonldConfigurationWriteContext.md)
  - [OneOfFileJsonldContext](docs/Model/OneOfFileJsonldContext.md)
  - [OneOfFileJsonldFileReadContext](docs/Model/OneOfFileJsonldFileReadContext.md)
- - [OneOfFileUploadJsonldUploadReadContext](docs/Model/OneOfFileUploadJsonldUploadReadContext.md)
 
 ## Documentation For Authorization
 
