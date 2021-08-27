@@ -62,6 +62,7 @@ class File implements ModelInterface, ArrayAccess
 'mime_type' => 'string',
 'size' => 'int',
 'extension' => 'string',
+'internal_file_url' => 'string',
 'file_url' => 'string',
 'encrypted' => 'bool',
 'created_at' => '\DateTime',
@@ -80,6 +81,7 @@ class File implements ModelInterface, ArrayAccess
 'mime_type' => null,
 'size' => null,
 'extension' => null,
+'internal_file_url' => null,
 'file_url' => null,
 'encrypted' => null,
 'created_at' => 'date-time',
@@ -119,6 +121,7 @@ class File implements ModelInterface, ArrayAccess
 'mime_type' => 'mimeType',
 'size' => 'size',
 'extension' => 'extension',
+'internal_file_url' => 'internalFileUrl',
 'file_url' => 'fileUrl',
 'encrypted' => 'encrypted',
 'created_at' => 'createdAt',
@@ -137,6 +140,7 @@ class File implements ModelInterface, ArrayAccess
 'mime_type' => 'setMimeType',
 'size' => 'setSize',
 'extension' => 'setExtension',
+'internal_file_url' => 'setInternalFileUrl',
 'file_url' => 'setFileUrl',
 'encrypted' => 'setEncrypted',
 'created_at' => 'setCreatedAt',
@@ -155,6 +159,7 @@ class File implements ModelInterface, ArrayAccess
 'mime_type' => 'getMimeType',
 'size' => 'getSize',
 'extension' => 'getExtension',
+'internal_file_url' => 'getInternalFileUrl',
 'file_url' => 'getFileUrl',
 'encrypted' => 'getEncrypted',
 'created_at' => 'getCreatedAt',
@@ -225,6 +230,7 @@ class File implements ModelInterface, ArrayAccess
         $this->container['mime_type'] = isset($data['mime_type']) ? $data['mime_type'] : null;
         $this->container['size'] = isset($data['size']) ? $data['size'] : null;
         $this->container['extension'] = isset($data['extension']) ? $data['extension'] : null;
+        $this->container['internal_file_url'] = isset($data['internal_file_url']) ? $data['internal_file_url'] : null;
         $this->container['file_url'] = isset($data['file_url']) ? $data['file_url'] : null;
         $this->container['encrypted'] = isset($data['encrypted']) ? $data['encrypted'] : null;
         $this->container['created_at'] = isset($data['created_at']) ? $data['created_at'] : null;
@@ -396,6 +402,30 @@ class File implements ModelInterface, ArrayAccess
     public function setExtension($extension)
     {
         $this->container['extension'] = $extension;
+
+        return $this;
+    }
+
+    /**
+     * Gets internal_file_url
+     *
+     * @return string
+     */
+    public function getInternalFileUrl()
+    {
+        return $this->container['internal_file_url'];
+    }
+
+    /**
+     * Sets internal_file_url
+     *
+     * @param string $internal_file_url internal_file_url
+     *
+     * @return $this
+     */
+    public function setInternalFileUrl($internal_file_url)
+    {
+        $this->container['internal_file_url'] = $internal_file_url;
 
         return $this;
     }

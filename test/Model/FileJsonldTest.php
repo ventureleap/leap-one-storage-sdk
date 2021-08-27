@@ -139,6 +139,13 @@ class FileJsonldTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "internal_file_url"
+     */
+    public function testPropertyInternalFileUrl()
+    {
+    }
+
+    /**
      * Test attribute "file_url"
      */
     public function testPropertyFileUrl()

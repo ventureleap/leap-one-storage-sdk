@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **mime_type** | **string** |  | [optional] 
 **size** | **int** |  | [optional] 
 **extension** | **string** |  | [optional] 
+**internal_file_url** | **string** |  | [optional] 
 **file_url** | **string** |  | [optional] 
 **encrypted** | **bool** |  | [optional] 
 **created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
